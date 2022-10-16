@@ -30,8 +30,12 @@ export function loginHandler(e) {
         })
             .then(res => res.json())
             .then(user => {
-                localStorage.setItem('user', JSON.stringify(user));
-                page.redirect('/');
+                if (!user.accessToken) {
+                    alert(user.message);
+                } else {
+                    localStorage.setItem('user', JSON.stringify(user));
+                    page.redirect('/');
+                }
             })
             .catch(error => alert(error.message));
     } else {

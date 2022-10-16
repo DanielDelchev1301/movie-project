@@ -8,6 +8,11 @@ export function getAllMovies() {
         .then(res => res.json());
 }
 
+export function getOneMovie(id) {
+    return fetch(`${baseUrl}/movies/${id}`)
+        .then(res => res.json());
+}
+
 export function createHandler(e) {
     e.preventDefault();
 
