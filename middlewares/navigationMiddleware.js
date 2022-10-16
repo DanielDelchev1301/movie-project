@@ -1,20 +1,31 @@
 import { html } from '../node_modules/lit-html/lit-html.js';
+import { isAuth } from '../services/authService.js';
 
 const navRoot = document.getElementById('navigation-content');
 
-const navigationTemplate = () => html`
+const user = html`
+    <a href="/factory">Factory</a>
+    <a href="/logout">Logout</a>
+`;
+
+const guest = html`
+    <a href="/register">Register</a>
+    <a href="/login">Login</a>
+`;
+
+const navigationTemplate = (isAuth) => html`
     <nav>
         <a href="/">Home</a>
         <a href="/collection">Collection</a>
-        <a href="/factory">Factory</a>
-        <a href="/register">Register</a>
-        <a href="/login">Login</a>
-        <a href="/logout">Logout</a>
+        ${isAuth?
+          user
+        : guest
+        }
     </nav>
 `;
 
 export function navigationMiddleware(ctx, next) {
-    ctx.render(navigationTemplate(), navRoot);
+    ctx.render(navigationTemplate(isAuth()), navRoot);
 
     next();
 }
