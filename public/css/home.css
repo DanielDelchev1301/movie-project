@@ -42,6 +42,10 @@ html, body {
     color: rgb(201, 201, 201);
 }
 
+#main-content {
+    min-height: 1500px;
+}
+
 #main-content h1 {
     text-align: center;
     padding-bottom: 40px;
@@ -176,7 +180,7 @@ footer {
     width: 1499px;
     text-align: center;
     bottom: 0;
-    position: static;
+    position: fixed;
     background-color: gray;
     padding: 10px;
     color: white;

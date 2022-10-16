@@ -31,6 +31,7 @@ const homeTemplate = (movies) => html`
 export function homeView(ctx) {
     getAllMovies()
         .then(movies => {
+            
             ctx.render(homeTemplate(movies), mainRoot);
         })
         .catch(err => console.log(err));
