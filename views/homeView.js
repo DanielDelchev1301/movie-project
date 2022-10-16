@@ -18,12 +18,13 @@ const homeTemplate = (movies) => html`
         ${movies.map(movie => movieTemplate(movie))}
     </div>
     <div id="title-content">
-        <h2>MovieFactory</h2>
+        <h2 id="diff-color">MovieFactory</h2>
         <h2>is the place</h2>
         <h2>that you will love</h2>
     </div>
+    <p id="dot">.</p>
     <div id="description-content">
-        <p>oafjoiwqjo oijiojoi iow diowjoi nwio iowjdiojio owidjio jwiodjiojwoi jiowjdoi jiowjdoijwdio wiodop opw poopkpdompow opwo ipwd ippidpwipi wpowpod</p>
+        <p>We have passion about the movies around the world and everyone that love to grab a pack of popcorns and lay all day long with the best movies and series out there. If you are that kind of person, you are at the right place. Here you will find only high value titles and you will love them.</p>
     </div>
 `;
 
