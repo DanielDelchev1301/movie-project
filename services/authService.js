@@ -10,6 +10,10 @@ export function logoutHandler() {
     page.redirect('/');
 }
 
+export function getUser() {
+    return localStorage.getItem('user');
+}
+
 export function loginHandler(e) {
     e.preventDefault();
 

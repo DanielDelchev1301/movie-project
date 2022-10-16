@@ -64,7 +64,7 @@ html, body {
 
 #new-ones {
     position: relative;
-    height: 550px;
+    min-height: 550px;
     text-align: center;
     animation-name: newOnesShows;
     animation-duration: 2s;
@@ -118,7 +118,7 @@ html, body {
 }
 
 .text a:hover {
-    background-color: rgb(132, 132, 132);
+    background-color: rgb(171, 171, 171);
     font-size: 29px;
 }
 
@@ -154,6 +154,15 @@ html, body {
     border-top: 1px solid #dedede;
     border-left: 1px solid #dedede;
     border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+#description-content:hover {
+    border-top: 3px solid gray;
+    border-left: 3px solid gray;
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
 }
 
 #description-content p {
