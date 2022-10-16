@@ -1,0 +1,13 @@
+#all-movies {
+    height: 550px;
+    text-align: center;
+    animation-name: allMoviesShows;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes allMoviesShows {
+    0% { margin-left: 200px; opacity: 0; }
+    70% { margin-left: 0px; margin-right: 100px; opacity: 0.7; }
+    100% { text-align: center; opacity: 1; }
+}

@@ -4,3 +4,7 @@ export function getAllMovies() {
     return fetch(`${baseUrl}/movies`)
         .then(res => res.json());
 }
+
+export function createMovie() {
+    
+}

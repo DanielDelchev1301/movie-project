@@ -4,7 +4,7 @@ const navRoot = document.getElementById('navigation-content');
 
 const navigationTemplate = () => html`
     <nav>
-        <a href="/home">Home</a>
+        <a href="/">Home</a>
         <a href="/collection">Collection</a>
         <a href="/factory">Factory</a>
         <a href="/register">Register</a>
