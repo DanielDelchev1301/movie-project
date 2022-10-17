@@ -31,8 +31,7 @@ const homeTemplate = (movies) => html`
 export function homeView(ctx) {
     getAllMovies()
         .then(movies => {
-            const mostPopular = movies.sort((a, b) => b.likes - a.likes).slice(0, 3);
-            ctx.render(homeTemplate(mostPopular), mainRoot);
+            ctx.render(homeTemplate(movies), mainRoot);
         })
         .catch(err => console.log(err));
 }

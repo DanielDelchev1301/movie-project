@@ -11,6 +11,7 @@ import { logoutHandler } from '../services/authService.js';
 import { factoryView } from '../views/factoryView.js';
 import { detailsView } from '../views/detailsView.js';
 import { deleteHandler } from '../services/movieService.js';
+import { editView } from '../views/editView.js';
 
 page(renderMiddleware);
 page(navigationMiddleware);
@@ -23,5 +24,6 @@ page('/logout', logoutHandler);
 page('/factory', factoryView);
 page('/details/:_id', detailsView);
 page('/delete/:_id', deleteHandler);
+page('/edit/:_id', editView);
 
 page.start();
