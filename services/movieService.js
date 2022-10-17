@@ -35,12 +35,30 @@ export function createHandler(e) {
             })
         })
             .then(res => res.json())
-            .then(createdMovie => {
-                console.log(createdMovie);
+            .then(() => {
                 page.redirect('/');
             })
             .catch(error => alert(error.message));
     } else {
         alert('Every field must be filled!');
     }
+}
+
+export function deleteHandler(ctx) {
+    const id = ctx.params._id;
+    const { accessToken } = JSON.parse(getUser());
+
+    
+    fetch(`${baseUrl}/movies/${id}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-Authorization': accessToken
+        }
+    })
+        .then(res => res.json())
+        .then(() => {
+            page.redirect('/collection');
+        })
+        .catch(err => alert(err.message));
 }

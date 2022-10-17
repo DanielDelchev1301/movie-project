@@ -10,6 +10,7 @@ import { registerView } from '../views/registerView.js';
 import { logoutHandler } from '../services/authService.js';
 import { factoryView } from '../views/factoryView.js';
 import { detailsView } from '../views/detailsView.js';
+import { deleteHandler } from '../services/movieService.js';
 
 page(renderMiddleware);
 page(navigationMiddleware);
@@ -21,5 +22,6 @@ page('/register', registerView);
 page('/logout', logoutHandler);
 page('/factory', factoryView);
 page('/details/:_id', detailsView);
+page('/delete/:_id', deleteHandler);
 
 page.start();
