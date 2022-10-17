@@ -1484,7 +1484,9 @@
     	movies: {
     		"1240549d-f0e0-497e-ab99-eb8f703713d7": {
     			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                likes: "3",
+                likes: [
+
+                ],
     			title: "Black Widow",
     			description: "Natasha Romanoff aka Black Widow confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Comes on the screens 2020.",
     			img: "https://miro.medium.com/max/735/1*akkAa2CcbKqHsvqVusF3-w.jpeg",
@@ -1493,7 +1495,9 @@
     		},
     		"143e5265-333e-4150-80e4-16b61de31aa0": {
     			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                likes: "0",
+                likes: [
+
+                ],
     			title: "Wonder Woman 1984",
     			description: "Diana must contend with a work colleague and businessman, whose desire for extreme wealth sends the world down a path of destruction, after an ancient artifact that grants wishes goes missing.",
     			img: "https://pbs.twimg.com/media/ETINgKwWAAAyA4r.jpg",
@@ -1502,7 +1506,9 @@
     		},
     		"a9bae6d8-793e-46c4-a9db-deb9e3484909": {
     			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-                likes: "1",
+                likes: [
+
+                ],
     			title: "Top Gun 2",
     			description: "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.",
     			img: "https://i.pinimg.com/originals/f2/a4/58/f2a458048757bc6914d559c9e4dc962a.jpg",
@@ -1511,7 +1517,9 @@
     		},
             "a9bae10w9sks8-793e-46c4-a9db-idi2ijswk0k": {
     			_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-                likes: "3",
+                likes: [
+
+                ],
     			title: "Freedom",
     			description: "Two men separated by 100 years are united in their search for freedom. In 1856, slave Samuel Woodward and his family escape from the Monroe Plantation near Richmond, Virginia. A secret network of ordinary people known as the Underground Railroad guide the family on their journey north to Canada.",
     			img: "https://imgs.search.brave.com/29bv1AiNR02YPr8XJExJ-daQEpT-eEkq8_4Pr9AnPvU/rs:fit:355:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5D/S1pzU1ZaM09aMnRF/SGVIZ2hEZzZBSGFK/NCZwaWQ9QXBp",
@@ -1520,15 +1528,15 @@
     		},
             "skm1sdwf2-793e-46c4-a9db-k2osdi29i2jn": {
     			_ownerId: "847ec027-f659-4086-8032-5173e2f9c93a",
-                likes: "2",
+                likes: [
+
+                ],
     			title: "Harry Potter and the Deathly Hallows",
     			description: "The story follows Harry Potter, who has been asked by Dumbledore to find and destroy Lord Voldemort's secret to immortality the Horcruxes.",
     			img: "https://imgs.search.brave.com/W2f0wE-sqMTNXnXuXN4YNHh2OzpEQIWqb5_h9B7-7Vg/rs:fit:355:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5J/RG9ULWJCX3I2X3dN/dDdkR2tKbXNBSGFK/NCZwaWQ9QXBp",
     			_createdOn: 1614935268294,
     			_id: "skm1sdwf2-793e-46c4-a9db-k2osdi29i2jn"
     		}
-    	},
-    	likes: {
     	},
     	ideas: {
     		"833e0e57-71dc-42c0-b387-0ce0caf5225e": {
